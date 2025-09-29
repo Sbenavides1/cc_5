@@ -57,3 +57,9 @@ function processPayroll(employee) {
 }
 let emp = { name: "Alice", hourlyRate: 20, hoursWorked: 40 };
 console.log(processPayroll(emp)); // Fourth test
+
+// loop through employees and log payroll details
+employees.forEach(emp => {
+    console.log(processPayroll(emp));
+});
+
