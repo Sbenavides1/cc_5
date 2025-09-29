@@ -19,3 +19,5 @@ function calculateBasePay(rate, hours) {
         return rate * 40;
     }
 }
+
+console.log(calculateBasePay(20, 45)); // First test 
