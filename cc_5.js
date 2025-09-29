@@ -37,3 +37,5 @@ console.log(calculateOvertimePay(20, 45)); // Second test
 function calculateTaxes(totalPay) {
     return totalPay * 0.15;
 }
+
+console.log(calculateTaxes(1000)); // Third test
