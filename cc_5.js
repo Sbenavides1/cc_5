@@ -55,4 +55,5 @@ function processPayroll(employee) {
         netPay: netPay
     };
 }
+let emp = { name: "Alice", hourlyRate: 20, hoursWorked: 40 };
 console.log(processPayroll(emp)); // Fourth test
