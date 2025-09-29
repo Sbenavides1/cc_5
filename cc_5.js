@@ -29,3 +29,5 @@ function calculateOvertimePay(rate, hours) {
     } else {
         return 0;
 }
+
+console.log(calculateOvertimePay(20, 45)); // Second test
