@@ -21,3 +21,11 @@ function calculateBasePay(rate, hours) {
 }
 
 console.log(calculateBasePay(20, 45)); // First test 
+
+// Funtion to calculate overtime pay
+function calculateOvertimePay(rate, hours) {
+    if (hours > 40) {
+        return rate * 1.5 * (hours - 40);
+    } else {
+        return 0;
+}
