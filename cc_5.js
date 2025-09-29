@@ -28,6 +28,12 @@ function calculateOvertimePay(rate, hours) {
         return rate * 1.5 * (hours - 40);
     } else {
         return 0;
+    }
 }
 
 console.log(calculateOvertimePay(20, 45)); // Second test
+
+// Function to calculate taxes (15%)
+function calculateTaxes(totalPay) {
+    return totalPay * 0.15;
+}
