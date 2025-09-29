@@ -11,3 +11,11 @@ let employees = [
 
 // Create an array of 3–5 employee objects. Each should include: name, hourlyRate, hoursWorked.
 
+// Function calculateBasePay(rate, hours) that returns pay for up to 40 hours only.
+function calculateBasePay(rate, hours) {
+    if (hours <= 40) {
+        return rate * hours;
+    } else {
+        return rate * 40;
+    }
+}
