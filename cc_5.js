@@ -44,5 +44,14 @@ console.log(calculateTaxes(1000)); // Third test
 function processPayroll(employee) {
     let basePay = calculateBasePay(employee.hourlyRate, employee.hoursWorked);
     let overtimePay = calculateOvertimePay(employee.hourlyRate, employee.hoursWorked);
-
+    let grossPay = basePay + overtimePay;
+    let taxes = calculateTaxes(grossPay);
+    let netPay = grossPay - taxes;
+    return {
+        name: employee.name,
+        basePay: basePay,
+        overtimePay: overtimePay,
+        grossPay: grossPay,
+        netPay: netPay
+    };
 }
