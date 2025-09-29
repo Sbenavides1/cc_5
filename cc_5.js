@@ -39,3 +39,10 @@ function calculateTaxes(totalPay) {
 }
 
 console.log(calculateTaxes(1000)); // Third test
+
+// Function to process payroll for each employee
+function processPayroll(employee) {
+    let basePay = calculateBasePay(employee.hourlyRate, employee.hoursWorked);
+    let overtimePay = calculateOvertimePay(employee.hourlyRate, employee.hoursWorked);
+
+}
