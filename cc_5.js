@@ -55,3 +55,4 @@ function processPayroll(employee) {
         netPay: netPay
     };
 }
+console.log(processPayroll(emp)); // Fourth test
